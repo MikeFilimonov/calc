@@ -45,7 +45,7 @@ public class Main {
     private static boolean operandAreRoman(String input) {
 
         String[] splitData = input.split("[-+/*]");
-        return isValidRomanNumber(splitData[0]) && isValidRomanNumber(splitData[1]);
+        return isValidRomanNumber(splitData[0].trim()) && isValidRomanNumber(splitData[1].trim());
 
 
     }
